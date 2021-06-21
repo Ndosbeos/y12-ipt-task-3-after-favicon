@@ -1,0 +1,30 @@
+	<mat-toolbar  class="topBar">
+
+				<button mat-icon-button (click)="previouspage()">
+            <mat-icon>arrow_back_ios_new</mat-icon>
+          </button>
+
+			<div fxFlex> </div>
+			<div  fxFlex id="thename">
+				HSC IPT STUDY RESOURCE
+			</div>
+			<div fxFlex > </div>
+			<div fxHide.xs >
+			</div>
+		</mat-toolbar>
+<body>
+<div class="toptext">If Sample Answers is red there are no sample answers available.</div>
+<button  mat-raised-button class=widebutton [routerLink]="['/hscpaper',id]" > Test</button>
+<button  mat-raised-button class=widebutton [routerLink]="['/hscguide',id]" > Marking Guidelines</button>
+<button  mat-raised-button class=widebutton [ngStyle]="{'background-color': color}" [routerLink]="['/hscsample',id]" > Sample Answers</button>
+
+ 
+  </body>
+
+
+
+	<mat-toolbar  class="footer">
+			<div class="footerMenu">
+				HSC Past Papers
+			</div>
+		</mat-toolbar>

@@ -1,0 +1,96 @@
+	<mat-toolbar  class="topBar">
+
+				<button mat-icon-button [routerLink]="['/multimediahome']">
+            <mat-icon>arrow_back_ios_new</mat-icon>
+          </button>
+
+			<div fxFlex> </div>
+			<div  fxFlex id="thename">
+				HSC IPT STUDY RESOURCE
+			</div>
+			<div fxFlex > </div>
+			<div fxHide.xs >
+			</div>
+		</mat-toolbar>
+<body>
+	<mat-card class="outercard">
+<mat-card class="bodycard">
+  <h1>What are Multimedia Systems?</h1>
+  <p>Multimedia systems combine many different types of media to form interactive systems, with these types of media including video, audio, text and images.
+</p>
+  <h1>Different Types of Media found in Multimedia Systems:</h1>
+  <h2>Text</h2>
+  <p>Text is one of the most common forms of media, used in many systems to present the majority of information, found in headings, paragraphs, and menus. Text is generally represented through ASCII (American Standard Code for Information Exchange) or EBCDIC (Extended Binary Coded Decimal Interchange Code). However, Unicode is the common standard for text today, with higher limits than ASCII, which is limited to a maximum of 127 possible values, which is not usable for languages that require characters outside of the standard 26 character alphabet.</p>
+  <img src="https://i.imgur.com/uBOZfGF.gif" class="tableimg" alt="The ASCII Table (Source: http://www.asciitable.com/)"><img src="https://i.imgur.com/J8henuD.png" class="tableimg" alt="The EBCDIC Table (Source: https://en.wikipedia.org/wiki/ASCII)">
+  <p>The ASCII and EBCDIC Tables, <b>https://en.wikipedia.org/wiki/ASCII</b> and <b>http://www.asciitable.com/</b></p>
+  <p>Unicode, first created in 1987, is not limited in this same way and allows for over a million different possibilities for characters. This is important for the representation of text, as many languages such as Japanese use many thousands of these characters.</p>
+  <p>There are five types of typefaces used to represent text: <font face="serif">serif</font>, <font face="sans serif">sans serif</font>, script, monospaced, and display. It is crucial to choose an appropriate typeface for use depending on how you are using it.</p>
+  
+  <h3>Numbers</h3>
+<p>Numbers are used to represent values such as integers, dates and times, booleans and decimals. Unlike all other media types, numbers have magnitude. They are represented similarly to text.</p>
+
+<h2>Audio</h2>
+<p>Audio is used to represent sound in a digital format. Many file formats are used to store audio, such as MP3, WAV, MID, OGG, FLAC, and OPUS. Audio is often used to support other information and is often combined with text and video, both separately and sometimes at the same time (e.g. Foreign Films and TV Shows subtitled into other languages)</p>
+
+<p>Waves have two essential components, which are amplitude and frequency, and are represented as sine waves. Frequency determines the pitch of a sound and is the number of times a wavelength occurs in a second, measured in hertz. Amplitude is the distance from the origin of the wave, which is half a wavelength. This determines the sound volume, commonly measured in decibels.</p>
+<h3>Compression</h3>
+<p>Compression standards are set by the Moving Picture Experts Group (MPEG), such as MP3, which is short for MPEG audio layer 3. Being lossy, MP3 loses some detail in compression, but most listeners will not notice this missing sound.</p>
+<h3>Midi</h3>
+<p>Musical Instruments Digital Interface (MIDI) files allow for the representation of music in individual notes and are used alongside files that contain the sounds of instruments to produce the music electronically.</p>
+
+<h2>Images</h2>
+<h3>Bitmap</h3>
+<h4>Colour</h4>
+<p>
+	Bitmaps represent each dot or pixel individually, with colours of these pixels represented as binary numbers. The number of colours available in the image contributes significantly to the overall size of this binary representation, as well as the image file. Black and white images only require a single bit, and the number of colours avaialable increases exponentially with every added bit, with 256 colours available at 8 bits and 16.7 million colours available at 24 bits.
+</p>
+<h4>Resolution</h4>
+<p>
+	Resolution determines the level of detail in the image, and is expressed in the form WxH, where W is width and H is height and when multiplied will give the total pixel count, for example, 1920x1080 has a total pixel count of 2073600.
+</p>
+<h4>File Size</h4>
+<p>To calculate the uncompressed file size of a bitmap image, multiply the total pixel count by the bit depth, for example, a 1920x1080 image with a bit depth of 24 will have an uncompressed file size of 1920x1080x3 = 6220800 bytes, where 3 is the number of bytes for 24bit colour.</p>
+<p>These images are often compressed to reduce file size. This is done with lossy formats (e.g. JPEG, developed by the Joint Photographic Experts Group) and lossless (e.g. PNG).</p>
+<h3>Vector</h3>
+<h4>About Vectors</h4>
+<p>
+Vectors represent images mathematically, where each shape within the image is a seperate object that can be altered individually. Due to this, vectors can scale up infinitely in size without any loss in quality, but are not suited for use in representing photographs due to the level of detail required.
+</p>
+<h4>Vector File Types</h4>
+<p>Within windows, WMF (Windows Metafile) and EMF (Enhanced Metafile) are commonly used in windows applications, and SVG (Scalable Vector Graphics) is the standard used for web representation of vectors.</p>
+<h2>Animation</h2>
+<p>Animation is created through the use of a series of images, which are either cels or frames, which are displayed in a sequence. Each image has small differences to the previous, which is perceived as movement by the human brain when played at a fast enough speed. The typical framerate for animation is 24fps, however this is typically 23.976 when on NTSC (National Television System Comittee) based equipment. </p>
+<h3>Cel Based Animation</h3>
+<p>
+	Prior to computer based animation, animation had to be done by hand, drawn on clear celluloid material, which allowed for the reuse of assets, as each cel was layered on top of others to create a final image. Cels of significance, known as key frames are drawn by the main animator and less experienced animators usually draw the inbetween cels. These cels would be photographed onto film to create the animation.
+</p>
+<h3>
+	Path-Based Animation
+</h3>
+<p>
+	Path-based animation causes an object or character to follow a path, and is done through the use of software. These characters can be cel animated or static objects, and can be transformed in a number of ways through the use of software.
+</p>
+<h3>
+	Animation File Types
+</h3>
+<p>
+	GIF (Graphics Interchange Format) and SWF (Flash) are file types used to contain information. The GIF format is one of the most commonly used formats on the internet, while Adobe ended support for Flash in 2021. <br>
+	GIF files allow for the storage of multiple bitmap images within a single file, with a limit of 256 bits for colour. They cannot store audio. Each Frame can have its display length specified during creation of the GIF.
+	</p>
+	<img src="https://i.imgur.com/pt5V2eL.mp4">
+	<p>
+	Flash used to be commonly used across the internet, with Flash Player installed on over 96% of internet users's computers. Some complete websites were made using flash in the past, however as support for flash was removed from browsers most of these websites adapted by removing flash content. SWF files arrange data into definition control and action tags, with definition tags allowing characters within the animation to be created and modified, control tags placing these characters on a display list. This allows the file to create the animation as it is played, reducing overall file size.
+</p>
+  </mat-card>
+	</mat-card>
+  <br><br>
+	<div class="whitespace"> &nbsp;</div>
+  </body>
+
+
+
+	<mat-toolbar  class="footer">
+			<div class="footerMenu">
+				Multimedia
+			</div>
+		</mat-toolbar>

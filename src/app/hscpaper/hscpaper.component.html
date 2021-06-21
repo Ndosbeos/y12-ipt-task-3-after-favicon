@@ -1,0 +1,26 @@
+	<mat-toolbar  class="topBar">
+
+				<button mat-icon-button [routerLink]="['/hscchoice',id]">
+            <mat-icon>arrow_back_ios_new</mat-icon>
+          </button>
+
+			<div fxFlex> </div>
+			<div  fxFlex id="thename">
+				HSC IPT STUDY RESOURCE
+			</div>
+			<div fxFlex > </div>
+			<div fxHide.xs >
+			</div>
+		</mat-toolbar>
+<body>
+<iframe [src]="pdfsrc | safe"  width="100%" style="border:0"></iframe>
+
+  </body>
+
+
+
+	<mat-toolbar  class="footer">
+			<div class="footerMenu">
+				HSC Past Paper - {{pdfyear.year}}
+			</div>
+		</mat-toolbar>

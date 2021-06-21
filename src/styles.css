@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+
+
+/*
+deeppurple-amber.css
+indigo-pink.css
+pink-bluegrey.css
+purple-green.css
+
+*/
+
+
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+}
+body{
+    margin: 0;
+}
+
+.topBar {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom:6px;
+    background-color:#474747;
+}
+
+
+.footer {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:40px;
+    background-color: black;
+}
+.footerMenu{
+  width:100%;
+  text-align: center;
+  font-size:12px;
+  
+}
+#thename {
+text-align:center;
+padding-right:2.5vw;
+font-size:4vmin;
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #333333; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #474747; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9e9e9e; 
+}

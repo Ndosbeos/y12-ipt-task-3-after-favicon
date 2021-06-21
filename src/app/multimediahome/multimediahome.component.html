@@ -1,0 +1,27 @@
+	<mat-toolbar  class="topBar">
+
+				<button mat-icon-button (click)="previouspage()">
+            <mat-icon>arrow_back_ios_new</mat-icon>
+          </button>
+
+			<div fxFlex> </div>
+			<div  fxFlex id="thename">
+				HSC IPT STUDY RESOURCE
+			</div>
+			<div fxFlex > </div>
+			<div fxHide.xs >
+			</div>
+		</mat-toolbar>
+<body>
+<button mat-raised-button class=widebutton [routerLink]="['/multimediapage']">Topic Information</button>
+<button mat-raised-button class=widebutton [routerLink]="['/quizmulti']">Quizlet</button>
+  
+  </body>
+
+
+
+	<mat-toolbar  class="footer">
+			<div class="footerMenu">
+				Multimedia
+			</div>
+		</mat-toolbar>

@@ -1,0 +1,54 @@
+
+.box {
+    padding: 10px;
+    margin:2px;
+    width:50%;
+    vertical-align: middle;
+
+}
+
+a:link {
+  color: coral;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+body {
+text-align:center;
+display:flex;
+justify-content:space-evenly;
+flex-wrap:wrap;
+
+/*border:1px solid black;*/
+height:80vh;
+width:100vw;
+padding-top:100px
+}
+.smallbutton {
+
+height: 11.25vh;
+width:40vw;
+font-size:5vmin;
+line-height: 5vh;
+white-space:normal !important;
+word-wrap:break-word;
+border-radius:2vmin
+}
+
+.widebutton {
+height: 11.25vh;
+width:85vw;
+font-size:5vmin;
+border-radius:2vmin
+}
+.toptext {
+width:100vw
+}
